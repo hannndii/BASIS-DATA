@@ -3,18 +3,19 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
     List L;
+    int target;
+
     createList(L);
-    int angka;
-    for (int i = 0; i < 5; i++){
+    for(int i = 0; i < 5; i++){
+        int angka;
         cin >> angka;
         address p = allocate(angka);
-        insertFirst(L, p);
+        insertLast(L, p);
     }
-    cout << "isi list:";
     printInfo(L);
-
-    return 0;
+    address prec = next(first(L));
+    address p = allocate(6);
+    insertAfter(L, prec, p);
 }

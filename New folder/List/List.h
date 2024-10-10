@@ -1,17 +1,16 @@
-#ifndef LIST_H_INCLUDED
-#define LIST_H_INCLUDED
 #include <iostream>
 #define first(L) L.first
-#define next(P) P->next
 #define info(P) P->info
+#define next(P) P->next
 
 using namespace std;
-typedef int infotype;
-typedef struct elmlist *address;
 
-struct elmlist {
-    infotype info;
+typedef struct elmlist *address;
+typedef int infotype;
+
+struct elmlist{
     address next;
+    infotype info;
 };
 
 struct List{
@@ -22,11 +21,12 @@ void createList(List &L);
 
 address allocate(infotype x);
 
-void insertFirst(List &L, address p);
+void insertLast(List &L, address P);
 
 void printInfo(List L);
 
-void deleteFirst(List &L, address &P);
+void searchInfo(List L, int);
 
+void insertFirst(List &L, address P);
 
-#endif // LIST_H_INCLUDED
+void insertAfter(List &L, address P);
