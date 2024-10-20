@@ -94,7 +94,7 @@ void insertMiddle_103022300064(List &L, infotype value){
 }
 
 
-int selectMenu(){
+int selectMenu_103022300064(){
     cout << "===== MENU =====" << endl;
     cout << "0. Keluar" << endl;
     cout << "1. Input Data Baru" << endl;

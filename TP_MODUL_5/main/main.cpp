@@ -8,7 +8,7 @@ int main()
     List L;
     int pilihan = 0;
 
-    pilihan = selectMenu();
+    pilihan = selectMenu_103022300064();
     while(pilihan != 0){
         switch(pilihan){
         case 1:
@@ -35,7 +35,7 @@ int main()
             insertMiddle_103022300064(L, value);
             showAllData_103022300064(L);
         }
-        pilihan = selectMenu();
+        pilihan = selectMenu_103022300064();
     }
     cout << "ANDA TELAH KELUAR DARI PROGRAM" << endl;
     return 0;

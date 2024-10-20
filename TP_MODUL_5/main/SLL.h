@@ -25,5 +25,5 @@ void insertLast_103022300064(List &L, address p);
 void showAllData_103022300064(List L);
 address findMin(List L);
 void insertMiddle_103022300064(List &L, int value);
-int selectMenu();
+int selectMenu_103022300064();
 #endif // SLL_H_INCLUDED
