@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// ADA MASALAH PADA CASE PERTAMA KETIKA INPUT KE-2
+
 int main() {
     List L;
     isEmpty_103022300064(L);
